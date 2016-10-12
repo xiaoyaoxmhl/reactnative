@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+###伸缩容器的属性
+
+1.display
+
+display:flex | inline-flex
+
+块级伸缩容器 行内级伸缩容器
+
+2.flex-direction
+
+指定主轴的方向 flex-direction:row（默认值）| row-reverse | column | column-reverse
+
+3.flex-wrap
+
+伸缩容器在主轴线方向空间不足的情况下，是否换行以及该如何换行
+
+flex-wrap:nowrap（默认值） | wrap | wrap-reverse
+
+4.flex-flow
+
+是flex-direction和flex-wrap的缩写版本，它同时定义了伸缩容器的主轴和侧轴
+，其默认值为 row nowrap
+
+5.justify-content
+
+用来定义伸缩项目在主轴线的对齐方式，语法为：
+justify-content:flex-start（默认值） | flex-end | center | space-between | space-around
+
+6.align-items
+
+用来定义伸缩项目在交叉轴上的对齐方式，语法为：
+align-items:flex-start（默认值） | flex-end | center | baseline | stretch
+
+7.align-content
+
+用来调整伸缩项目出现换行后在交叉轴上的对齐方式，语法为：
+align-content:flex-start | flex-end | center | space-between | space-around | stretch（默认值）
+
+
+###伸缩项目的属性
+
+1.order
+
+定义项目的排列顺序，数值越小，排列越靠前，默认值为0，语法为：order：整数值
+
+2.flex-grow
+
+定义伸缩项目的放大比例，默认值为0，即表示如果存在剩余空间，也不放大，语法为：flex-grow：整数值
+
+3.flex-shrink
+
+定义伸缩项目的收缩能力，默认值为1 ，其语法为：flex-shrink:整数值
+
+4.flex-basis
+
+用来设置伸缩项目的基准值，剩余的空间按比率进行伸缩，其语法为：flex-basis:length | auto，默认值为auto
+
+5.flex
+
+是flex-grow flex-shrink flex-basis这三个属性的缩写，其语法为：flex:none | flex-grow flex-shrink flex-basis，其中第二个和第三个参数为可选参数，默认值为：0 1 auto
+
+6.align-self
+
+用来设置单独的伸缩项目在交叉轴上的对齐方式，会覆盖默认的对齐方式，其语法为：align-self:auto | flex-start | flex-end | center | baseline | stretch(伸缩项目在交叉轴方向占满伸缩容器，如果交叉轴为垂直方向的话，只有在不设置高度的情况下才能看到效果)
+
+
+
+
+RN目前主要支持flexbox的如下6个属性：
+
+1.alignItems
+
+用来定义伸缩项目在交叉轴上的对齐方式，语法为：
+alignItems:flex-start（默认值） | flex-end | center | stretch
+
+2.alignSelf
+
+用来设置单独的伸缩项目在交叉轴上的对齐方式，会覆盖默认的对齐方式，其语法为：alignSelf:auto | flex-start | flex-end | center | stretch(伸缩项目在交叉轴方向占满伸缩容器，如果交叉轴为垂直方向的话，只有在不设置高度的情况下才能看到效果)
+
+3.flex
+
+是flex-grow flex-shrink flex-basis这三个属性的缩写，其语法为：flex:none | flex-grow flex-shrink flex-basis，其中第二个和第三个参数为可选参数，默认值为：0 1 auto
+
+4.flexDirection
+
+指定主轴的方向 flex-direction:row| row-reverse | column（默认值） | column-reverse
+
+5.flexWrap
+
+6.justifyContent
+</body>
+</html>
