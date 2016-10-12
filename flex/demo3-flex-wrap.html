@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        /*指定主轴的方向 flex-direction:row（默认值）| row-reverse | column | column-reverse*/
+
+        .container{
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        .container>div{
+            height: 100px;
+        }
+        .inital{
+            -webkit-flex: initial;
+            flex:initial;
+            width: 200px;
+            min-width:100px;
+            background: #116644;
+        }
+        .none{
+            -webkit-flex: initial;
+            flex:none;
+            width: 200px;
+            background: #081066;
+
+        }
+        .flex1{
+            width: 800px;
+            background: #661d35;
+
+        }
+        .flex2{
+            background: #635b66;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="inital">
+        空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了
+    </div>
+    <div class="none">
+        无论窗口如何变化，我的宽度一直是200px。
+    </div>
+    <div class="flex1">
+        我会占满剩余宽度的1/3。
+    </div>
+    <div class="flex2">
+        我会占满剩余宽度的2/3。
+    </div>
+</div>
+</body>
+</html>
