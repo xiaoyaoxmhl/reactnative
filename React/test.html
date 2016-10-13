@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <script type="text/javascript" src="react.js"></script>
+    <script type="text/javascript" src="react-dom.js"></script>
+    <script type="text/javascript" src="browser.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/babel">
+        var Child=React.createClass({
+            render:function () {
+                return(
+                        <span>{this.props.name}</span>
+                )
+            }
+        });
+        var Parent=React.createClass({
+            click:wfunction () {
+                this.refs.child.getDOMNode().style.color="red";
+            },
+            render:function () {
+                return(
+                        <div onClick={this.click}>Parent is:
+                            <Child name={this.props.name}  ref="child"/>
+                        </div>
+                )
+            }
+        });
+
+        ReactDOM.render(
+           <Parent name="React"/>,
+                   document.getElementById("container")
+        );
+    </script>
+</body>
+</html>
