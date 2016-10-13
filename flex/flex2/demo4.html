@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            height: 100%;
+            width: 100%;
+        }
+
+        #box1{
+            background: red;
+            height: 70px;
+            width: 80px;
+        }
+        #box2{
+            background: yellow;
+            width: 80px;
+            height: 100px;
+            align-items: flex-start;
+        }
+/*        用来设置单独的伸缩项目在交叉轴上的对齐方式，会覆盖默认的对齐方式，其语法为：align-self:auto | flex-start | flex-end | center | baseline | stretch(伸缩项目在交叉轴方向占满伸缩容器，如果交叉轴为垂直方向的话，只有在不设置高度的情况下才能看到效果)*/
+        #box3{
+            background: green;
+            height: 90px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+    第一个
+</div>
+<div id="box2">
+    第二个
+</div>
+<div id="box3">
+    第三个
+</div>
+</body>
+</html>

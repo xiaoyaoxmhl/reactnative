@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        #main
+        {
+            width:220px;
+            height:300px;
+            border:1px solid black;
+            display:flex;
+            align-items:center;
+        }
+
+        #main div
+        {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<h2>align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。
+</h2>
+<div id="main">
+    <div style="background-color:coral;">红色</div>
+    <div style="background-color:lightblue;">蓝色</div>
+    <div style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+</div>
+
+<p>点击“尝试一下”按钮，设置 alignItems 属性的值为 "flex-start"。</p>
+
+<button onclick="myFunction()">尝试一下</button>
+
+<script>
+    function myFunction()
+    {
+        document.getElementById("main").style.alignItems = "flex-start";
+    }
+</script>
+
+<p><b>注意：</b>Safari 不支持 alignItems 属性。</p>
+
+</body>
+</html>

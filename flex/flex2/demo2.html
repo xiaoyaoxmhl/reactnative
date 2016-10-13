@@ -19,31 +19,32 @@
             height: 100px;
             width: 80px;
         }
-        /*2.flex-grow 定义伸缩项目的放大比例，默认值为0，即表示如果存在剩余空间，也不放大，语法为：flex-grow：整数值*/
         #box2{
             background: yellow;
             height: 100px;
-            width: 80px;
-            flex-grow: 1;
+            width: 800px;
+
+          /*  3.flex-shrink
+            定义伸缩项目的收缩能力，默认值为1 ，其语法为：flex-shrink:整数值*/
+            flex-shrink: 2;
         }
         #box3{
             background: green;
             height: 100px;
-            width: 80px;
-            /*1.order 定义项目的排列顺序，数值越小，排列越靠前，默认值为0，语法为：order：整数值*/
-            order:-1;
+            width: 800px;
+            flex-shrink: 1;
         }
     </style>
 </head>
 <body>
-    <div id="box1">
-        第一个
-    </div>
-    <div id="box2">
-        第二个
-    </div>
-    <div id="box3">
-        第三个
-    </div>
+<div id="box1">
+    第一个
+</div>
+<div id="box2">
+    第二个
+</div>
+<div id="box3">
+    第三个
+</div>
 </body>
 </html>
